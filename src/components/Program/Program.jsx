@@ -23,6 +23,8 @@ export default function Program() {
 
         {/* program 3 */}
         <Program3/>
+
+        <button className="max-w-[159px] mx-auto text-[14px] font-normal cursor-pointer w-full h-[43px] bg-[#F99D73] text-white rounded-[30px] md:max-w-[250px] md:text-[22px] md:h-[78px] md:rounded-[50px] flex justify-center items-center mt-32">Get Passes</button>
       </div>
     </div>
   );
