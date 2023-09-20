@@ -6,6 +6,7 @@ export default {
       screens: {
         xsm: { min: "0px", max: "480px" },
         sm: { min: "481px", max: "640px" },
+        xmd: { min: "768", max: "1220px" },
         xxl: { min: "1024px", max: "1318px" },
       },
     },
