@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <>
       <footer className="text-white cursor-pointer body-font bg-[#BE7649]">
-        <div className="md:footer_container  lg:px-24 py-24 mx-auto flex md:items-center lg:items-start md:flex-col md:flex-nowrap flex-wrap flex-col md:px-5 lg:flex-row">
+        <div className="md:footer_container lg:px-24 py-24 mx-auto flex md:items-center lg:items-start md:flex-col md:flex-nowrap flex-wrap flex-col md:px-5 lg:flex-row">
           {/* First Column */}
           <div className="w-80 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left lg:mt-6">
             <div className="max-w-[325.413px] min-h-[76.232px]">
@@ -39,7 +39,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 justify-between md:pl-0 -mb-10 md:mt-5 mt-10 md:text-left text-center md:grid-cols-2 lg:grid-cols-5 lg:mt-0 lg:max-w-5xl lg:mx-auto ">
+          <div className="grid grid-cols-1 justify-between md:pl-0 -mb-10 md:mt-5 mt-10 md:text-left text-center md:grid-cols-2 xxl:grid-cols-3 lg:grid-cols-5 lg:mt-0 lg:max-w-5xl lg:mx-auto ">
             <div className="lg:w-[151px] md:w-1/2 w-full lg:ml-7">
               <nav className="list-none border-b-2 border-t-2 border-[#E0AA51] text-start md:border-0">
                 <ul className="ml-[44px] my-4">
