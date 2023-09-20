@@ -38,7 +38,7 @@ const Footer = () => {
               </span>
             </div>
           </div>
-
+          
           <div className="flex-grow flex flex-wrap justify-between md:pl-10 -mb-10 md:mt-0 mt-10 md:text-left text-center">
             <div className="lg:w-auto md:w-1/2 w-full px-4">
               <nav className="list-none mb-10">
