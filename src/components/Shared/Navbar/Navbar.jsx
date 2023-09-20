@@ -81,7 +81,7 @@ export default function Navbar() {
                     </div>
                     <p className='text-black-100 text-sm'>
                       Thul klivian doldur thisspiasian calrissian. Garindan d8
-                      aurra twi'lek tund polis gen'dai sola tarpals.
+                      aurra twi&rsquo;lek tund polis gen&rsquo;dai sola tarpals.
                     </p>
                     <div className='flex items-center py-3'>
                       <svg
@@ -111,7 +111,7 @@ export default function Navbar() {
                     </div>
                     <p className='text-black text-sm'>
                       Thul klivian doldur thisspiasian calrissian. Garindan d8
-                      aurra twi'lek tund polis gen'dai sola tarpals.
+                      aurra twi&rsquo;lek tund polis gen&rsquo;dai sola tarpals.
                     </p>
                     <div className='flex items-center py-3'>
                       <svg
@@ -156,7 +156,7 @@ export default function Navbar() {
                     </div>
                     <p className='text-black text-sm'>
                       Thul klivian doldur thisspiasian calrissian. Garindan d8
-                      aurra twi'lek tund polis gen'dai sola tarpals.
+                      aurra twi&rsquo;lek tund polis gen&rsquo;dai sola tarpals.
                     </p>
                     <div className='flex items-center py-3'>
                       <svg
