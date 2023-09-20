@@ -1,204 +1,210 @@
-import logoImg from "../../../assets/logo.png";
-import megaMenu2 from "../../../assets/mega-menu2.png";
+import { useState } from "react";
+import hamburgerIcon from "../../../assets/hamburgerMenu.png";
+import imgLogo from "../../../assets/logo.png";
 import AnnounceBar from "../AnnounceBar/AnnounceBar";
 import "./Navbar.css";
 
 export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+  // const sidebarRef = useRef(null);
+
+  // useEffect(() => {
+  //   const handleClickOutside = (event) => {
+  //     if (
+  //       isOpen &&
+  //       sidebarRef.current &&
+  //       !sidebarRef.current.contains(event.target)
+  //     ) {
+  //       setIsOpen(false);
+  //     }
+  //   };
+
+  //   if (isOpen) {
+  //     document.addEventListener("mousedown", handleClickOutside);
+  //   } else {
+  //     document.removeEventListener("mousedown", handleClickOutside);
+  //   }
+
+  //   return () => {
+  //     document.removeEventListener("mousedown", handleClickOutside);
+  //   };
+  // }, [isOpen]);
+
+  const handleHamMenu = () => {
+    // setIsOpen(!isOpen);
+    isOpen === true ? setIsOpen(false) : setIsOpen(true);
+  };
+
   return (
     <>
-      <div className='navbar bg-[#FFF7E0] h-[153px]  '>
-        <div className='navbar-start'>
-          <div className='dropdown'>
-            <label tabIndex={0} className='btn btn-ghost lg:hidden'>
-              <svg
-                xmlns='http://www.w3.org/2000/svg'
-                className='h-5 w-5'
-                fill='none'
-                viewBox='0 0 24 24'
-                stroke='currentColor'>
-                <path
-                  strokeLinecap='round'
-                  strokeLinejoin='round'
-                  strokeWidth='2'
-                  d='M4 6h16M4 12h8m-8 6h16'
-                />
-              </svg>
-            </label>
+      <nav>
+        {/* <div className='flex justify-center space-x-4'>
+          <ul className='flex'>
+            <li>
+              <a href='#'>Brief</a>
+            </li>
+            <li>
+              <a href='#'>Program</a>
+            </li>
+            <li>
+              <a href='#'>Explore</a>
+            </li>
+            <li>
+              <a href='#'>Brief</a>
+            </li>
+            <li>
+              <a href='#'>Attend</a>
+            </li>
+            <li>
+              <a href='#'>Support</a>
+            </li>
+          </ul>
+        </div> */}
 
-            <ul
-              tabIndex={0}
-              className='menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52'>
-              <li>
-                <a>Item 1</a>
+        {/* Mobile version */}
+        <div className='container h-[61px] bg-[#FFF7E0] lg:hidden md:hidden '>
+          <div className='flex  py-3.5 '>
+            <div>
+              <input
+                type='submit'
+                value='Get Passes'
+                className='bg-[#A34411] rounded-[34px] text-[11px] text-[#FFF7E0] font-normal px-3 py-2 cursor-pointer'
+              />
+            </div>
+            <div className='grow'>
+              <img
+                src={imgLogo}
+                alt='logo'
+                className='w-[138px] h-[32px] mx-auto '
+              />
+            </div>
+            <button className='w-[22px] h-[21px]  mt-1' onClick={handleHamMenu}>
+              <img src={hamburgerIcon} alt='' />
+            </button>
+          </div>
+        </div>
+      </nav>
+      <AnnounceBar />
+
+      {/* Sidebar */}
+      <div className={`sidebar ${isOpen == true ? "active" : ""}`}>
+        <div className='pt-28 pl-10 overflow-y-scroll'>
+          <div className='collapse collapse-plus '>
+            <input type='radio' name='my-accordion-3' />
+            <div className='collapse-title text-[22px] font-normal '>
+              Belief
+            </div>
+            <ul className='collapse-content text-[18px] font-light '>
+              <li className='leading-10'>
+                <a href='#'>Founder’s Vision</a>
               </li>
-              <li>
-                <a>Parent</a>
-                <ul className='p-2'>
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
+              <li className='leading-10'>
+                <a href='#'>Mission</a>
               </li>
-              <li>
-                <a>Item 3</a>
+              <li className='leading-10'>
+                <a href='#'>Festival Totems</a>
+              </li>
+              <li className='leading-10'>
+                <a href='#'>Sustainability</a>
               </li>
             </ul>
           </div>
-        </div>
+          <div className='collapse collapse-plus '>
+            <input type='radio' name='my-accordion-3' />
+            <div className='collapse-title text-[22px] font-normal'>
+              Program
+            </div>
+            <ul className='collapse-content text-[18px] font-light '>
+              <li className='leading-10'>
+                <a href='#'>Festival Program</a>
+              </li>
+              <li className='leading-10'>
+                <a href='#'>All Artists</a>
+              </li>
+              <li className='leading-10'>
+                <a href='#'>Concerts</a>
+              </li>
+              <li className='leading-10'>
+                <a href='#'>Wellbeing</a>
+              </li>
+            </ul>
+          </div>
+          <div className='collapse collapse-plus '>
+            <input type='radio' name='my-accordion-3' />
+            <div className='collapse-title text-[22px] font-normal'>
+              Explore
+            </div>
+            <ul className='collapse-content text-[18px] font-light '>
+              <li className='leading-10'>
+                <a href='#'>Concerts</a>
+              </li>
+              <li className='leading-10'>
+                <a href='#'>Wellbeing</a>
+              </li>
+              <li className='leading-10'>
+                <a href='#'>Marketplace</a>
+              </li>
+              <li className='leading-10'>
+                <a href='#'>Nourish Stations</a>
+              </li>
+              <li className='leading-10'>
+                <a href='#'>Art installations</a>
+              </li>
+              <li className='leading-10'>
+                <a href='#'>Outdoor Activities</a>
+              </li>
+            </ul>
+          </div>
+          <div className='collapse collapse-plus '>
+            <input type='radio' name='my-accordion-3' />
+            <div className='collapse-title text-[22px] font-normal'>Attend</div>
+            <ul className='collapse-content text-[18px] font-light '>
+              <li className='leading-10'>
+                <a href='#'>Transport</a>
+              </li>
+              <li className='leading-10'>
+                <a href='#'>Camping</a>
+              </li>
+              <li className='leading-10'>
+                <a href='#'>Festival Map</a>
+              </li>
+              <li className='leading-10'>
+                <a href='#'>Packing List</a>
+              </li>
+              <li className='leading-10'>
+                <a href='#'>Get Passes</a>
+              </li>
+            </ul>
+          </div>
+          <div className='collapse collapse-plus '>
+            <input type='radio' name='my-accordion-3' />
+            <div className='collapse-title text-[22px] font-normal'>
+              Support
+            </div>
+            <ul className='collapse-content text-[18px] font-light '>
+              <li className='leading-10'>
+                <a href='#'>FAQ</a>
+              </li>
+              <li className='leading-10'>
+                <a href='#'>Contact Us</a>
+              </li>
+            </ul>
+          </div>
 
-        <div className='navbar-center hidden lg:flex '>
-          <ul className='menu menu-horizontal lg:items-center px-1'>
-            <li className='hoverable '>
-              <a className='text-[#a34411] text-[22px] font-normal relative '>
-                Belief
-              </a>
-
-              <div className='p-6 mega-menu mb-16 sm:mb-0 shadow-xl bg-red'>
-                <div className='container mx-auto w-full  '>
-                  <div className='w-full text-black mb-8 text-center'>
-                    <h2 className='font-bold text-2xl'>
-                      Listen, why don’t you wait out by the speeder.
-                    </h2>
-                    <p>
-                      our droids. They’ll have to wait outside. We don’t want
-                      them here.
-                    </p>
-                  </div>
-                  <ul className='px-4 w-full sm:w-1/2 lg:w-1/4 border-gray-600 border-b sm:border-r lg:border-b-0 pb-6 pt-6 lg:pt-3'>
-                    <div className='flex items-center'>
-                      <svg
-                        className='h-8 mb-3 mr-3 fill-current text-black'
-                        xmlns='http://www.w3.org/2000/svg'
-                        viewBox='0 0 20 20'>
-                        <path d='M3 6c0-1.1.9-2 2-2h8l4-4h2v16h-2l-4-4H5a2 2 0 0 1-2-2H1V6h2zm8 9v5H8l-1.67-5H5v-2h8v2h-2z' />
-                      </svg>
-                      <h3 className='font-bold text-xl text-black text-bold mb-2'>
-                        Tatooine
-                      </h3>
-                    </div>
-                    <p className='text-black-100 text-sm'>
-                      Thul klivian doldur thisspiasian calrissian. Garindan d8
-                      aurra twi'lek tund polis gen'dai sola tarpals.
-                    </p>
-                    <div className='flex items-center py-3'>
-                      <svg
-                        className='h-6 pr-3 fill-current text-black'
-                        xmlns='http://www.w3.org/2000/svg'
-                        viewBox='0 0 20 20'>
-                        <path d='M20 10a10 10 0 1 1-20 0 10 10 0 0 1 20 0zm-2 0a8 8 0 1 0-16 0 8 8 0 0 0 16 0zm-8 2H5V8h5V5l5 5-5 5v-3z' />
-                      </svg>
-                      <a
-                        href='#'
-                        className='text-black bold border-b-2 border-teal-300 hover:text-teal-900'>
-                        Find out more...
-                      </a>
-                    </div>
-                  </ul>
-                  <ul className='px-4 w-full sm:w-1/2 lg:w-1/4 border-gray-600 border-b sm:border-r-0 lg:border-r lg:border-b-0 pb-6 pt-6 lg:pt-3'>
-                    <div className='flex items-center'>
-                      <svg
-                        className='h-8 mb-3 mr-3 fill-current text-black'
-                        xmlns='http://www.w3.org/2000/svg'
-                        viewBox='0 0 20 20'>
-                        <path d='M4.13 12H4a2 2 0 1 0 1.8 1.11L7.86 10a2.03 2.03 0 0 0 .65-.07l1.55 1.55a2 2 0 1 0 3.72-.37L15.87 8H16a2 2 0 1 0-1.8-1.11L12.14 10a2.03 2.03 0 0 0-.65.07L9.93 8.52a2 2 0 1 0-3.72.37L4.13 12zM0 4c0-1.1.9-2 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4z' />
-                      </svg>
-                      <h3 className='font-bold text-xl text-black text-bold mb-2'>
-                        Cantonica
-                      </h3>
-                    </div>
-                    <p className='text-black text-sm'>
-                      Thul klivian doldur thisspiasian calrissian. Garindan d8
-                      aurra twi'lek tund polis gen'dai sola tarpals.
-                    </p>
-                    <div className='flex items-center py-3'>
-                      <svg
-                        className='h-6 pr-3 fill-current text-black'
-                        xmlns='http://www.w3.org/2000/svg'
-                        viewBox='0 0 20 20'>
-                        <path d='M20 10a10 10 0 1 1-20 0 10 10 0 0 1 20 0zm-2 0a8 8 0 1 0-16 0 8 8 0 0 0 16 0zm-8 2H5V8h5V5l5 5-5 5v-3z' />
-                      </svg>
-                      <a
-                        href='#'
-                        className='text-black bold border-b-2 border-teal-300 hover:text-teal-900'>
-                        Find out more...
-                      </a>
-                    </div>
-                  </ul>
-                </div>
-              </div>
-            </li>
-            <li className='hoverable '>
-              <a className='text-[#a34411] text-[22px] font-normal relative'>
-                Program
-              </a>
-
-              <div className='p-6 mega-menu mb-16 sm:mb-0 shadow-xl '>
-                <div className='container mx-auto w-full  '>
-                  <ul className='px-4 w-full sm:w-1/2 lg:w-1/4   pb-6 pt-6 lg:pt-6'>
-                    <div className='flex items-center'>
-                      <img src={megaMenu2} alt='' />
-                    </div>
-                  </ul>
-                  <ul className='px-4 w-full sm:w-1/2 lg:w-1/4  pb-6 pt-6 lg:pt-3'>
-                    <div className='flex items-center'>
-                      <svg
-                        className='h-8 mb-3 mr-3 fill-current text-black'
-                        xmlns='http://www.w3.org/2000/svg'
-                        viewBox='0 0 20 20'>
-                        <path d='M4.13 12H4a2 2 0 1 0 1.8 1.11L7.86 10a2.03 2.03 0 0 0 .65-.07l1.55 1.55a2 2 0 1 0 3.72-.37L15.87 8H16a2 2 0 1 0-1.8-1.11L12.14 10a2.03 2.03 0 0 0-.65.07L9.93 8.52a2 2 0 1 0-3.72.37L4.13 12zM0 4c0-1.1.9-2 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4z' />
-                      </svg>
-                      <h3 className='font-bold text-xl text-black text-bold mb-2'>
-                        Cantonica
-                      </h3>
-                    </div>
-                    <p className='text-black text-sm'>
-                      Thul klivian doldur thisspiasian calrissian. Garindan d8
-                      aurra twi'lek tund polis gen'dai sola tarpals.
-                    </p>
-                    <div className='flex items-center py-3'>
-                      <svg
-                        className='h-6 pr-3 fill-current text-black'
-                        xmlns='http://www.w3.org/2000/svg'
-                        viewBox='0 0 20 20'>
-                        <path d='M20 10a10 10 0 1 1-20 0 10 10 0 0 1 20 0zm-2 0a8 8 0 1 0-16 0 8 8 0 0 0 16 0zm-8 2H5V8h5V5l5 5-5 5v-3z' />
-                      </svg>
-                      <a
-                        href='#'
-                        className='text-black bold border-b-2 border-teal-300 hover:text-teal-900'>
-                        Find out more...
-                      </a>
-                    </div>
-                  </ul>
-                </div>
-              </div>
-            </li>
-            <li>
-              <a className='text-[#a34411] text-[22px] font-normal '>Explore</a>
-            </li>
-            <li>
-              <img src={logoImg} alt='logo' />
-            </li>
-            <li>
-              <a className='text-[#a34411] text-[22px] font-normal '>Attend</a>
-            </li>
-            <li>
-              <a className='text-[#a34411] text-[22px] font-normal '>Support</a>
-            </li>
-          </ul>
-        </div>
-
-        <div className='lg:navbar-end md:navbar-end lg:me-2 md:me-2'>
-          <input
-            type='submit'
-            value='Get Passes'
-            className=' bg-[#A34411] rounded-[34px] text-[#FFF7E0] text-[20px] font-normal get_pass_btn text-center cursor-pointer'
-          />
+          <div className='mt-4 mb-20 text-center'>
+            <input
+              type='submit'
+              value='Get Passes'
+              className='bg-[#A34411] rounded-[34px] text-[20px] text-[#FFF7E0] font-normal w-[315px] h-[68px] cursor-pointer'
+            />
+          </div>
         </div>
       </div>
-      <AnnounceBar />
+
+      {/* Overlay */}
+      <div
+        className={`sidebar-overlay ${isOpen == true ? "active" : ""}`}
+        onClick={handleHamMenu}></div>
     </>
   );
 }
