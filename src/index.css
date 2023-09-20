@@ -1,12 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url("https://fonts.cdnfonts.com/css/aktiv-grotesk-cd-trial");
+@font-face {
+  font-family: "Aktiv-Grotesk"; /*a name to be used later*/
+  src: url("./Fonts/AktivGrotesk-Regular.otf"); /*URL to font*/
+}
 
 body {
-  /* font-family: "Aktiv Grotesk Cd Trial", sans-serif;
-   font-family: "Aktiv Grotesk Ex Trial", sans-serif;
-  font-family: "Aktiv Grotesk VF Trial", sans-serif;
-  font-family: "Aktiv Grotesk Trial", sans-serif; */
+  font-family: "Aktiv-Grotesk", sans-serif;
 }
