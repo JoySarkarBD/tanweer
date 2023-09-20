@@ -9,3 +9,17 @@
 body {
   font-family: "Aktiv-Grotesk", sans-serif;
 }
+
+.container {
+  @apply max-w-[1511px] mx-auto xl:px-20 md:px-10 sm:px-2 px-4 !h-full;
+}
+
+.parent-container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+.child-containers {
+  height: 100vh;
+  scroll-snap-align: start;
+}
