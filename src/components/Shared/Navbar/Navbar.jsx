@@ -190,17 +190,8 @@ export default function Navbar() {
               </li>
             </ul>
           </div>
-
-          <div className='mt-4 mb-20 text-center'>
-            <input
-              type='submit'
-              value='Get Passes'
-              className='bg-[#A34411] rounded-[34px] text-[20px] text-[#FFF7E0] font-normal w-[315px] h-[68px] cursor-pointer'
-            />
-          </div>
         </div>
       </div>
-
       {/* Overlay */}
       <div
         className={`sidebar-overlay ${isOpen == true ? "active" : ""}`}
@@ -209,41 +200,43 @@ export default function Navbar() {
   );
 }
 
-// import React, { useState } from "react";
-// import "./Navbar.css";
+{
+  /* import React, { useState } from "react";
+ import "./Navbar.css";
 
-// export default function Navbar() {
-//   const [isHovered, setIsHovered] = useState(false);
+ export default function Navbar() {
+  const [isHovered, setIsHovered] = useState(false);
 
-//   const handleHover = () => {
-//     setIsHovered(true);
-//   };
+  const handleHover = () => {
+    setIsHovered(true);
+  };
 
-//   const handleUnhover = () => {
-//     setIsHovered(false);
-//   };
+  const handleUnhover = () => {
+    setIsHovered(false);
+  };
 
-//   const navbarClass = isHovered ? "navbar hovered" : "navbar";
+  const navbarClass = isHovered ? "navbar hovered" : "navbar";
 
-//   return (
-//     <nav
-//       className={navbarClass}
-//       onMouseEnter={handleHover}
-//       onMouseLeave={handleUnhover}>
-//       <ul className='menu'>
-//         <li>
-//           <a href='#'>Home</a>
-//         </li>
-//         <li>
-//           <a href='#'>About</a>
-//         </li>
-//         <li>
-//           <a href='#'>Services</a>
-//         </li>
-//         <li>
-//           <a href='#'>Contact</a>
-//         </li>
-//       </ul>
-//     </nav>
-//   );
-// }
+  return (
+    <nav
+      className={navbarClass}
+      onMouseEnter={handleHover}
+      onMouseLeave={handleUnhover}>
+      <ul className='menu'>
+        <li>
+          <a href='#'>Home</a>
+        </li>
+        <li>
+          <a href='#'>About</a>
+        </li>
+        <li>
+          <a href='#'>Services</a>
+        </li>
+        <li>
+          <a href='#'>Contact</a>
+        </li>
+      </ul>
+    </nav>
+  );
+} */
+}

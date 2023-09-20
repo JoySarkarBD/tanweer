@@ -14,5 +14,5 @@ body {
   @apply max-w-[1511px] mx-auto xl:px-20 md:px-10 sm:px-2 px-4 !h-full;
 }
 .footer_container {
-  @apply !mx-auto xl:px-20 md:px-10 sm:px-2 px-4 !h-full;
+  @apply !mx-auto lg:px-24 md:px-10 sm:px-2 px-4 !h-full;
 }
