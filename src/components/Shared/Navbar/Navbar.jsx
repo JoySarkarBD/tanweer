@@ -91,10 +91,10 @@ export default function Navbar() {
         <div className='pt-28 pl-10 overflow-y-scroll'>
           <div className='collapse collapse-plus '>
             <input type='radio' name='my-accordion-3' />
-            <div className='collapse-title text-[22px] font-normal '>
+            <div className='collapse-title text-[26px] font-normal '>
               Belief
             </div>
-            <ul className='collapse-content text-[18px] font-light '>
+            <ul className='collapse-content text-[22px] font-light '>
               <li className='leading-10'>
                 <a href='#'>Founder’s Vision</a>
               </li>
@@ -111,10 +111,10 @@ export default function Navbar() {
           </div>
           <div className='collapse collapse-plus '>
             <input type='radio' name='my-accordion-3' />
-            <div className='collapse-title text-[22px] font-normal'>
+            <div className='collapse-title text-[26px] font-normal'>
               Program
             </div>
-            <ul className='collapse-content text-[18px] font-light '>
+            <ul className='collapse-content text-[22px] font-light '>
               <li className='leading-10'>
                 <a href='#'>Festival Program</a>
               </li>
@@ -131,10 +131,10 @@ export default function Navbar() {
           </div>
           <div className='collapse collapse-plus '>
             <input type='radio' name='my-accordion-3' />
-            <div className='collapse-title text-[22px] font-normal'>
+            <div className='collapse-title text-[26px] font-normal'>
               Explore
             </div>
-            <ul className='collapse-content text-[18px] font-light '>
+            <ul className='collapse-content text-[22px] font-light '>
               <li className='leading-10'>
                 <a href='#'>Concerts</a>
               </li>
@@ -157,8 +157,8 @@ export default function Navbar() {
           </div>
           <div className='collapse collapse-plus '>
             <input type='radio' name='my-accordion-3' />
-            <div className='collapse-title text-[22px] font-normal'>Attend</div>
-            <ul className='collapse-content text-[18px] font-light '>
+            <div className='collapse-title text-[26px] font-normal'>Attend</div>
+            <ul className='collapse-content text-[22px] font-light '>
               <li className='leading-10'>
                 <a href='#'>Transport</a>
               </li>
@@ -178,10 +178,10 @@ export default function Navbar() {
           </div>
           <div className='collapse collapse-plus '>
             <input type='radio' name='my-accordion-3' />
-            <div className='collapse-title text-[22px] font-normal'>
+            <div className='collapse-title text-[26px] font-normal'>
               Support
             </div>
-            <ul className='collapse-content text-[18px] font-light '>
+            <ul className='collapse-content text-[22px] font-light '>
               <li className='leading-10'>
                 <a href='#'>FAQ</a>
               </li>
@@ -190,6 +190,15 @@ export default function Navbar() {
               </li>
             </ul>
           </div>
+        </div>
+
+        {/* get pass button */}
+        <div className='mt-5 mb-14 text-center '>
+          <input
+            type='submit'
+            value='Get Passes'
+            className='bg-[#A34411] rounded-[34px] text-[20px] font-normal text-[#FFF7E0] w-[315px] h-[68px] '
+          />
         </div>
       </div>
       {/* Overlay */}
