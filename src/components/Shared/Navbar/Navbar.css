@@ -1,0 +1,14 @@
+:where(
+    .menu
+      li:not(.menu-title):not(.disabled)
+      > *:not(ul):not(details):not(.menu-title)
+  ):not(.active):hover {
+  background-color: transparent !important;
+  color: #a34411 !important;
+}
+
+.get_pass_btn {
+  max-width: 205px;
+  width: 100%;
+  height: 68px;
+}
