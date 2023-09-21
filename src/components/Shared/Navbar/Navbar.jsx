@@ -38,31 +38,43 @@ export default function Navbar() {
   return (
     <>
       <nav>
-        {/* <div className='flex justify-center space-x-4'>
-          <ul className='flex'>
-            <li>
-              <a href='#'>Brief</a>
-            </li>
-            <li>
-              <a href='#'>Program</a>
-            </li>
-            <li>
-              <a href='#'>Explore</a>
-            </li>
-            <li>
-              <a href='#'>Brief</a>
-            </li>
-            <li>
-              <a href='#'>Attend</a>
-            </li>
-            <li>
-              <a href='#'>Support</a>
-            </li>
-          </ul>
-        </div> */}
+        {/* desktop version */}
+        <div className='flex flex-row justify-center items-center  xmd:hidden sm:hidden xsm:hidden desktop_nav'>
+          <div className='basis-1/4'></div>
+
+          <div className='basis-1/2'>
+            <ul className='flex justify-center items-center space-x-4 '>
+              <li>
+                <a href='#'>Brief</a>
+              </li>
+              <li>
+                <a href='#'>Program</a>
+              </li>
+              <li>
+                <a href='#'>Explore</a>
+              </li>
+              <li className='w-[290px]  h-[67px]'>
+                <img src={imgLogo} alt='logo' className='w-full' />
+              </li>
+              <li>
+                <a href='#'>Attend</a>
+              </li>
+              <li>
+                <a href='#'>Support</a>
+              </li>
+            </ul>
+          </div>
+
+          <div className='basis-1/4 '>
+            <button className='bg-[#A34411] rounded-[34px] text-[#FFF7E0] font-normal text-[20px] w-[185px] h-[47px] mx-auto '>
+              {" "}
+              Get Passes{" "}
+            </button>
+          </div>
+        </div>
 
         {/* Mobile version */}
-        <div className='container h-[61px] bg-[#FFF7E0] lg:hidden md:hidden '>
+        <div className='container h-[51px] bg-[#FFF7E0] lg:hidden md:hidden xl:hidden 2xl:hidden '>
           <div className='flex  py-3.5 '>
             <div>
               <input

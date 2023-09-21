@@ -4,10 +4,13 @@ export default {
   theme: {
     extend: {
       screens: {
-        xsm: { min: "0px", max: "480px" },
-        sm: { min: "481px", max: "640px" },
-        xmd: { min: "768", max: "1220px" },
-        xxl: { min: "1024px", max: "1318px" },
+        xsm: { min: "0px" },
+        sm: { min: "481px" },
+        xmd: { min: "641px" },
+        md: { min: "768px" },
+        lg: { min: "1024px" },
+        xl: { min: "1280px" },
+        "2xl": { min: "1536px" },
       },
     },
   },

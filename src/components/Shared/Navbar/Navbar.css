@@ -1,4 +1,4 @@
-/* mobile version */
+/* mobile version start */
 
 .sidebar {
   width: 100%;
@@ -33,6 +33,15 @@
   opacity: 1;
   visibility: visible;
 }
+
+/* mobile version end */
+
+/* desktop version start */
+.desktop_nav {
+  background: #FFF7E0;
+  color: #a34411;
+}
+/* desktop version end */
 
 /* mega menu */
 .mega-menu {
