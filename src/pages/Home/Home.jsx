@@ -1,3 +1,4 @@
+import AboutPrograms from "../../components/AboutPrograms/AboutPrograms";
 import Banner from "../../components/Banner/Banner";
 import Features from "../../components/Features/Features";
 import FestivalTotems from "../../components/FestivalTotems/FestivalTotems";
@@ -8,8 +9,9 @@ export default function Home() {
   return (
     <>
       <Banner />
-      <Program/>
-      <FestivalTotems/>
+      <AboutPrograms />
+      <Program />
+      <FestivalTotems />
       <Features />
       <Newsletter />
     </>

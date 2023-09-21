@@ -1,0 +1,24 @@
+/* Style for the tabs */
+.tabs {
+  border-top: 1px solid #e0aa51 !important;
+  border-bottom: 1px solid #e0aa51 !important;
+}
+
+.tab {
+  cursor: pointer;
+  /* font-size: 28px !important; */
+  /* color: #e0aa51 !important; */
+  /* height: 93px !important; */
+}
+
+.tab.active {
+  /* background-color: #f0f0f0; */
+  /* color: #ffe88c !important; */
+}
+
+/* Style for the tab content */
+.tab-content {
+  padding: 20px;
+  /* border: 1px solid #ccc; */
+  border-radius: 0 0 5px 5px;
+}
