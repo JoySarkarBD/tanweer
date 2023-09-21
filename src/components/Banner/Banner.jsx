@@ -4,9 +4,16 @@ const Banner = () => {
   return (
     <>
       <div className="min-h-screen bg-[#C06F39] flex items-center py-6 lg:py-6">
-        <div className="flex items-center justify-between w-full container flex-col-reverse space-y-12 lg:space-y-0 lg:flex-row md:flex-col-reverse md:space-y-12">
+        <div className="w-full px-[15px] grid lg:grid-cols-2  lg:items-center md:grid-cols-1">
           {/* Banner left Area */}
-          <div className="text-center">
+          <div className="xsm:w-full xsm:text-center  lg:order-2">
+            <img
+              src={heroImg}
+              className="xsm:max-w-[317px] xsm:w-full xsm:inline-block xsm:py-[20px] xmd:max-w-[729px]"
+              alt="Hero"
+            />
+          </div>
+          <div className="text-center lg:order-1">
             <h1 className="text-[#FFE88C] font-normal flex items-center justify-center flex-col">
               <span className="text-[30px] leading-[100px] md:text-[65px] md:leading-[100px]">
                 GET YOUR
@@ -20,9 +27,6 @@ const Banner = () => {
             </button>
           </div>
           {/* Banner right Area */}
-          <div className="max-w-[742px]">
-            <img src={heroImg} className="w-full h-full" alt="Hero" />
-          </div>
         </div>
       </div>
     </>
