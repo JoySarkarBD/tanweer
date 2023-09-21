@@ -2,6 +2,7 @@ import { useState } from "react";
 import hamburgerIcon from "../../../assets/hamburgerMenu.png";
 import imgLogo from "../../../assets/logo.png";
 import megaImg1 from "../../../assets/mega-menu1.png";
+import megaImg2 from "../../../assets/mega-menu2.png";
 import sidbarVersion from "../../../assets/sidbar_version.png";
 import upArrow from "../../../assets/up_arrow.png";
 // import megaImg1 from "../../../assets/mega-menu1.png";
@@ -130,34 +131,85 @@ export default function Navbar() {
                     </div>
                   </div>
                 </li>
-                <li className='h-[70px] pt-4 px-1 '>
+                <li className='h-[70px] pt-4 px-1 hoverable '>
                   <a
                     href='#'
-                    className='xl:text-[22px] lg:text-[18px] md:text-[16px] font-normal'>
+                    className='xl:text-[22px] lg:text-[18px] md:text-[16px] font-normal relative block '>
                     Program
                   </a>
+
+                  {/* mega menu */}
+                  <div className='p-6 mega-menu mb-16 sm:mb-0 shadow-xl '>
+                    <div className='container mx-auto  '>
+                      <div className='grid grid-cols-5  gap-4 items-center'>
+                        <div className='col-span-1 '>
+                          <img
+                            src={megaImg2}
+                            alt=''
+                            className='text-center lg:w-[190px] lg:h-[190px] md:w-[140px] md:h-[140px] mx-auto'
+                          />
+                        </div>
+
+                        <div className='col-span-2'>
+                          <ul>
+                            <li className='md:mb-3 lg:mb-0 '>
+                              <a
+                                href='#'
+                                className='2xl:text-[24px] xl:text-[20px] lg:text-[18px] md:text-[14px] font-normal  lg:leading-10 '>
+                                Festival Program
+                              </a>
+                            </li>
+                            <li className='md:mb-3 lg:mb-0'>
+                              <a
+                                href='#'
+                                className='2xl:text-[24px] xl:text-[20px] lg:text-[18px] md:text-[14px] font-normal lg:leading-10  '>
+                                All Artists
+                              </a>
+                            </li>
+                            <li className='md:mb-3 lg:mb-0'>
+                              <a
+                                href='#'
+                                className='2xl:text-[24px] xl:text-[20px] lg:text-[18px] md:text-[14px] font-normal lg:leading-10  '>
+                                Concerts
+                              </a>
+                            </li>
+                            <li className='md:mb-3 lg:mb-0'>
+                              <a
+                                href='#'
+                                className='2xl:text-[24px] xl:text-[20px] lg:text-[18px] md:text-[14px] font-normal lg:leading-10 '>
+                                Wellbeing
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div className='col-span-1'></div>
+                        <div className='col-span-1'></div>
+                        {/* <div className='col-span-1'></div> */}
+                      </div>
+                    </div>
+                  </div>
                 </li>
-                <li className='h-[70px] pt-4 px-1 '>
+                <li className='h-[70px] pt-4 px-1  hoverable '>
                   <a
                     href='#'
-                    className='xl:text-[22px] lg:text-[18px] md:text-[16px] font-normal'>
+                    className='xl:text-[22px] lg:text-[18px] md:text-[16px] font-normal relative block'>
                     Explore
                   </a>
                 </li>
                 <li className='lg:w-[290px] md:w-[200px]  lg:h-[67px] md:h-[47px]'>
                   <img src={imgLogo} alt='logo' className='w-full' />
                 </li>
-                <li className='h-[70px] pt-4 px-1 '>
+                <li className='h-[70px] pt-4 px-1  hoverable '>
                   <a
                     href='#'
-                    className='xl:text-[22px] lg:text-[18px] md:text-[16px] font-normal'>
+                    className='xl:text-[22px] lg:text-[18px] md:text-[16px] font-normal relative block'>
                     Attend
                   </a>
                 </li>
-                <li className='h-[70px] pt-4 px-1 '>
+                <li className='h-[70px] pt-4 px-1  hoverable '>
                   <a
                     href='#'
-                    className='xl:text-[22px] lg:text-[18px] md:text-[16px] font-normal'>
+                    className='xl:text-[22px] lg:text-[18px] md:text-[16px] font-normal relative block'>
                     Support
                   </a>
                 </li>
