@@ -14,34 +14,21 @@ import "./Navbar.css";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  // const sidebarRef = useRef(null);
-
-  // useEffect(() => {
-  //   const handleClickOutside = (event) => {
-  //     if (
-  //       isOpen &&
-  //       sidebarRef.current &&
-  //       !sidebarRef.current.contains(event.target)
-  //     ) {
-  //       setIsOpen(false);
-  //     }
-  //   };
-
-  //   if (isOpen) {
-  //     document.addEventListener("mousedown", handleClickOutside);
-  //   } else {
-  //     document.removeEventListener("mousedown", handleClickOutside);
-  //   }
-
-  //   return () => {
-  //     document.removeEventListener("mousedown", handleClickOutside);
-  //   };
-  // }, [isOpen]);
+  const [isHovered, setIsHovered] = useState(false);
 
   const handleHamMenu = () => {
-    // setIsOpen(!isOpen);
     isOpen === true ? setIsOpen(false) : setIsOpen(true);
   };
+
+  const handleHover = () => {
+    setIsHovered(true);
+  };
+
+  const handleUnhover = () => {
+    setIsHovered(false);
+  };
+
+  const desktopNavClass = isHovered ? "desktopNav hovered" : "desktopNav";
 
   return (
     <>
@@ -71,7 +58,10 @@ export default function Navbar() {
         </div>
 
         {/* desktop version */}
-        <div className=' hidden md:block desktop_nav'>
+        <div
+          className={`hidden md:block  ${desktopNavClass}`}
+          onMouseEnter={handleHover}
+          onMouseLeave={handleUnhover}>
           <div className=' flex flex-row justify-center items-center '>
             <div className='basis-1/4'></div>
 
@@ -354,6 +344,7 @@ export default function Navbar() {
                       <div className='grid grid-cols-5  gap-4 items-center'>
                         <div className='col-span-1'></div>
                         <div className='col-span-1'></div>
+                        <div className='col-span-1'></div>
                         <div className='col-span-1 '>
                           <img
                             src={megaImg5}
@@ -362,7 +353,6 @@ export default function Navbar() {
                           />
                         </div>
 
-                        <div className='col-span-1'></div>
                         <div className='col-span-1'>
                           <ul>
                             <li className='md:mb-3 lg:mb-0 '>

@@ -37,10 +37,16 @@
 /* mobile version end */
 
 /* desktop version start */
-.desktop_nav {
+.desktopNav {
   background: #fff7e0;
   color: #a34411;
+  transition: all 0.15s linear 0s;
 }
+
+.desktopNav.hovered {
+  background: #ffc278;
+}
+
 /* desktop version end */
 
 /* mega menu */
