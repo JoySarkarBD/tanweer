@@ -1,8 +1,11 @@
 import { useState } from "react";
 import hamburgerIcon from "../../../assets/hamburgerMenu.png";
 import imgLogo from "../../../assets/logo.png";
+import megaImg5 from "../../../assets/mega-menu.png";
 import megaImg1 from "../../../assets/mega-menu1.png";
 import megaImg2 from "../../../assets/mega-menu2.png";
+import megaImg3 from "../../../assets/mega-menu3.png";
+import megaImg4 from "../../../assets/mega-menu4.png";
 import sidbarVersion from "../../../assets/sidbar_version.png";
 import upArrow from "../../../assets/up_arrow.png";
 // import megaImg1 from "../../../assets/mega-menu1.png";
@@ -83,10 +86,10 @@ export default function Navbar() {
                   {/* mega menu */}
                   <div className='p-6 mega-menu mb-16 sm:mb-0 shadow-xl '>
                     <div className='container mx-auto  '>
-                      <div className='grid grid-cols-6  gap-4 items-center'>
+                      <div className='grid grid-cols-5  gap-4 items-center'>
                         <div className='col-span-1 '></div>
 
-                        <div className='col-span-1 '>
+                        <div className='col-span-1'>
                           <ul>
                             <li className='md:mb-3 lg:mb-0 '>
                               <a
@@ -118,7 +121,7 @@ export default function Navbar() {
                             </li>
                           </ul>
                         </div>
-                        <div className='col-span-2 '>
+                        <div className='col-span-1 '>
                           <img
                             src={megaImg1}
                             alt=''
@@ -142,7 +145,7 @@ export default function Navbar() {
                   <div className='p-6 mega-menu mb-16 sm:mb-0 shadow-xl '>
                     <div className='container mx-auto  '>
                       <div className='grid grid-cols-5  gap-4 items-center'>
-                        <div className='col-span-1 '>
+                        <div className='col-span-1'>
                           <img
                             src={megaImg2}
                             alt=''
@@ -195,6 +198,74 @@ export default function Navbar() {
                     className='xl:text-[22px] lg:text-[18px] md:text-[16px] font-normal relative block'>
                     Explore
                   </a>
+
+                  {/* mega menu */}
+                  <div className='p-6 mega-menu mb-16 sm:mb-0 shadow-xl '>
+                    <div className='container mx-auto  '>
+                      <div className='grid grid-cols-5  gap-4 items-center'>
+                        <div className='col-span-1'></div>
+                        <div className='col-span-1 '>
+                          <img
+                            src={megaImg3}
+                            alt=''
+                            className='text-center lg:w-[190px] lg:h-[190px] md:w-[140px] md:h-[140px] mx-auto'
+                          />
+                        </div>
+
+                        <div className='col-span-1'>
+                          <ul>
+                            <li className='md:mb-3 lg:mb-0 '>
+                              <a
+                                href='#'
+                                className='2xl:text-[24px] xl:text-[20px] lg:text-[18px] md:text-[14px] font-normal  lg:leading-10 '>
+                                Concerts
+                              </a>
+                            </li>
+                            <li className='md:mb-3 lg:mb-0'>
+                              <a
+                                href='#'
+                                className='2xl:text-[24px] xl:text-[20px] lg:text-[18px] md:text-[14px] font-normal lg:leading-10  '>
+                                Wellbeing
+                              </a>
+                            </li>
+                            <li className='md:mb-3 lg:mb-0'>
+                              <a
+                                href='#'
+                                className='2xl:text-[24px] xl:text-[20px] lg:text-[18px] md:text-[14px] font-normal lg:leading-10  '>
+                                Marketplace
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div className='col-span-1'>
+                          <ul>
+                            <li className='md:mb-3 lg:mb-0 '>
+                              <a
+                                href='#'
+                                className='2xl:text-[24px] xl:text-[20px] lg:text-[18px] md:text-[14px] font-normal  lg:leading-10 '>
+                                Nourish Stations
+                              </a>
+                            </li>
+                            <li className='md:mb-3 lg:mb-0'>
+                              <a
+                                href='#'
+                                className='2xl:text-[24px] xl:text-[20px] lg:text-[18px] md:text-[14px] font-normal lg:leading-10  '>
+                                Art installations
+                              </a>
+                            </li>
+                            <li className='md:mb-3 lg:mb-0'>
+                              <a
+                                href='#'
+                                className='2xl:text-[24px] xl:text-[20px] lg:text-[18px] md:text-[14px] font-normal lg:leading-10  '>
+                                Outdoor Activities
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div className='col-span-1'></div>
+                      </div>
+                    </div>
+                  </div>
                 </li>
                 <li className='lg:w-[290px] md:w-[200px]  lg:h-[67px] md:h-[47px]'>
                   <img src={imgLogo} alt='logo' className='w-full' />
@@ -205,6 +276,70 @@ export default function Navbar() {
                     className='xl:text-[22px] lg:text-[18px] md:text-[16px] font-normal relative block'>
                     Attend
                   </a>
+
+                  {/* mega menu */}
+                  <div className='p-6 mega-menu mb-16 sm:mb-0 shadow-xl '>
+                    <div className='container mx-auto  '>
+                      <div className='grid grid-cols-5  gap-4 items-center'>
+                        <div className='col-span-1'></div>
+                        <div className='col-span-1'></div>
+                        <div className='col-span-1 '>
+                          <img
+                            src={megaImg4}
+                            alt=''
+                            className='text-center lg:w-[190px] lg:h-[190px] md:w-[140px] md:h-[140px] mx-auto'
+                          />
+                        </div>
+
+                        <div className='col-span-1'>
+                          <ul>
+                            <li className='md:mb-3 lg:mb-0 '>
+                              <a
+                                href='#'
+                                className='2xl:text-[24px] xl:text-[20px] lg:text-[18px] md:text-[14px] font-normal  lg:leading-10 '>
+                                Transport
+                              </a>
+                            </li>
+                            <li className='md:mb-3 lg:mb-0'>
+                              <a
+                                href='#'
+                                className='2xl:text-[24px] xl:text-[20px] lg:text-[18px] md:text-[14px] font-normal lg:leading-10  '>
+                                Camping
+                              </a>
+                            </li>
+                            <li className='md:mb-3 lg:mb-0'>
+                              <a
+                                href='#'
+                                className='2xl:text-[24px] xl:text-[20px] lg:text-[18px] md:text-[14px] font-normal lg:leading-10  '>
+                                Festival Map
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div className='col-span-1'>
+                          <ul>
+                            <li className='md:mb-3 lg:mb-0 '>
+                              <a
+                                href='#'
+                                className='2xl:text-[24px] xl:text-[20px] lg:text-[18px] md:text-[14px] font-normal  lg:leading-10 '>
+                                Packing List
+                              </a>
+                            </li>
+                            <li className='md:mb-3 lg:mb-0'>
+                              <a
+                                href='#'
+                                className='2xl:text-[24px] xl:text-[20px] lg:text-[18px] md:text-[14px] font-normal lg:leading-10  '>
+                                Get Passes
+                              </a>
+                            </li>
+                            <li className='md:mb-3 lg:mb-3 invisible'>
+                              Outdoor Activities
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </li>
                 <li className='h-[70px] pt-4 px-1  hoverable '>
                   <a
@@ -212,6 +347,52 @@ export default function Navbar() {
                     className='xl:text-[22px] lg:text-[18px] md:text-[16px] font-normal relative block'>
                     Support
                   </a>
+
+                  {/* mega menu */}
+                  <div className='p-6 mega-menu mb-16 sm:mb-0 shadow-xl '>
+                    <div className='container mx-auto  '>
+                      <div className='grid grid-cols-5  gap-4 items-center'>
+                        <div className='col-span-1'></div>
+                        <div className='col-span-1'></div>
+                        <div className='col-span-1 '>
+                          <img
+                            src={megaImg5}
+                            alt=''
+                            className='text-center lg:w-[190px] lg:h-[190px] md:w-[140px] md:h-[140px] mx-auto'
+                          />
+                        </div>
+
+                        <div className='col-span-1'></div>
+                        <div className='col-span-1'>
+                          <ul>
+                            <li className='md:mb-3 lg:mb-0 '>
+                              <a
+                                href='#'
+                                className='2xl:text-[24px] xl:text-[20px] lg:text-[18px] md:text-[14px] font-normal  lg:leading-10 '>
+                                FAQ
+                              </a>
+                            </li>
+                            <li className='md:mb-3 lg:mb-0'>
+                              <a
+                                href='#'
+                                className='2xl:text-[24px] xl:text-[20px] lg:text-[18px] md:text-[14px] font-normal lg:leading-10  '>
+                                Contact Us
+                              </a>
+                            </li>
+                            <li className='md:mb-3 lg:mb-3 invisible'>
+                              Outdoor Activities
+                            </li>
+                            <li className='md:mb-3 lg:mb-3 invisible'>
+                              Outdoor Activities
+                            </li>
+                            <li className='md:mb-3 lg:mb-3 invisible'>
+                              Outdoor Activities
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </li>
               </ul>
             </div>
