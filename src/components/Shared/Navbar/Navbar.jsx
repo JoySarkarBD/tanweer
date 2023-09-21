@@ -1,6 +1,7 @@
 import { useState } from "react";
 import hamburgerIcon from "../../../assets/hamburgerMenu.png";
 import imgLogo from "../../../assets/logo.png";
+import megaImg1 from "../../../assets/mega-menu1.png";
 import AnnounceBar from "../AnnounceBar/AnnounceBar";
 import "./Navbar.css";
 
@@ -37,45 +38,10 @@ export default function Navbar() {
 
   return (
     <>
-      <nav>
-        {/* desktop version */}
-        <div className='flex flex-row justify-center items-center  xmd:hidden sm:hidden xsm:hidden desktop_nav'>
-          <div className='basis-1/4'></div>
-
-          <div className='basis-1/2'>
-            <ul className='flex justify-center items-center space-x-4 '>
-              <li>
-                <a href='#'>Brief</a>
-              </li>
-              <li>
-                <a href='#'>Program</a>
-              </li>
-              <li>
-                <a href='#'>Explore</a>
-              </li>
-              <li className='w-[290px]  h-[67px]'>
-                <img src={imgLogo} alt='logo' className='w-full' />
-              </li>
-              <li>
-                <a href='#'>Attend</a>
-              </li>
-              <li>
-                <a href='#'>Support</a>
-              </li>
-            </ul>
-          </div>
-
-          <div className='basis-1/4 '>
-            <button className='bg-[#A34411] rounded-[34px] text-[#FFF7E0] font-normal text-[20px] w-[185px] h-[47px] mx-auto '>
-              {" "}
-              Get Passes{" "}
-            </button>
-          </div>
-        </div>
-
+      <nav className='relative'>
         {/* Mobile version */}
-        <div className='container h-[51px] bg-[#FFF7E0] lg:hidden md:hidden xl:hidden 2xl:hidden '>
-          <div className='flex  py-3.5 '>
+        <div className='container h-[51px] bg-[#FFF7E0] block  md:hidden  '>
+          <div className='flex py-3.5 '>
             <div>
               <input
                 type='submit'
@@ -93,6 +59,79 @@ export default function Navbar() {
             <button className='w-[22px] h-[21px]  mt-1' onClick={handleHamMenu}>
               <img src={hamburgerIcon} alt='' />
             </button>
+          </div>
+        </div>
+
+        {/* desktop version */}
+        <div className='container hidden md:block desktop_nav'>
+          <div className=' flex flex-row justify-center items-center '>
+            <div className='basis-1/4'></div>
+
+            <div className='basis-1/2 py-4'>
+              <ul className='flex justify-center items-center xl:space-x-4 lg:space-x-3 md:space-x-2'>
+                <li className='h-[70px] pt-4 hoverable  '>
+                  <a
+                    href='#'
+                    className='xl:text-[22px] lg:text-[18px] md:text-[16px] font-normal relative block '>
+                    Brief
+                  </a>
+                  {/* mega menu */}
+                  <div className='p-6 mega-menu mb-16 sm:mb-0 shadow-xl '>
+                    <div className='container mx-auto  '>
+                      <div className=' text-black my-8 text-center'></div>
+                      <div className=' flex justify-around items-center'>
+                        <ul>
+                          <li>
+                            <a href='#'>Founder’s Vision</a>
+                          </li>
+                        </ul>
+                        <div>
+                          <img src={megaImg1} alt='' />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li className='h-[70px] pt-4'>
+                  <a
+                    href='#'
+                    className='xl:text-[22px] lg:text-[18px] md:text-[16px] font-normal'>
+                    Program
+                  </a>
+                </li>
+                <li className='h-[70px] pt-4'>
+                  <a
+                    href='#'
+                    className='xl:text-[22px] lg:text-[18px] md:text-[16px] font-normal'>
+                    Explore
+                  </a>
+                </li>
+                <li className='lg:w-[290px] md:w-[200px]  lg:h-[67px] md:h-[47px]'>
+                  <img src={imgLogo} alt='logo' className='w-full' />
+                </li>
+                <li className='h-[70px] pt-4'>
+                  <a
+                    href='#'
+                    className='xl:text-[22px] lg:text-[18px] md:text-[16px] font-normal'>
+                    Attend
+                  </a>
+                </li>
+                <li className='h-[70px] pt-4'>
+                  <a
+                    href='#'
+                    className='xl:text-[22px] lg:text-[18px] md:text-[16px] font-normal'>
+                    Support
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div className='basis-1/4  flex justify-center items-center mb-2'>
+              <button className='bg-[#A34411] rounded-[34px] text-[#FFF7E0] font-normal xl:text-[20px] lg:text-[18px] md:text-[14px] xl:w-[185px] lg:w-[140px] md:w-[110px] lg:h-[47px] md:h-[37px]  '>
+                {" "}
+                Get Passes{" "}
+              </button>
+            </div>
           </div>
         </div>
       </nav>

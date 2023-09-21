@@ -38,7 +38,7 @@
 
 /* desktop version start */
 .desktop_nav {
-  background: #FFF7E0;
+  background: #fff7e0;
   color: #a34411;
 }
 /* desktop version end */
@@ -72,7 +72,7 @@
   visibility: visible;
   z-index: 900;
   background: #ffc278 !important;
-  top: 15%;
+  top: 90%;
 }
 
 /* Navbar Styles */
