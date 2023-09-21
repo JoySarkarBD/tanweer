@@ -2,6 +2,9 @@ import { useState } from "react";
 import hamburgerIcon from "../../../assets/hamburgerMenu.png";
 import imgLogo from "../../../assets/logo.png";
 import megaImg1 from "../../../assets/mega-menu1.png";
+import sidbarVersion from "../../../assets/sidbar_version.png";
+import upArrow from "../../../assets/up_arrow.png";
+// import megaImg1 from "../../../assets/mega-menu1.png";
 import AnnounceBar from "../AnnounceBar/AnnounceBar";
 import "./Navbar.css";
 
@@ -43,11 +46,12 @@ export default function Navbar() {
         <div className='container h-[51px] bg-[#FFF7E0] block  md:hidden  '>
           <div className='flex py-3.5 '>
             <div>
-              <input
-                type='submit'
-                value='Get Passes'
-                className='bg-[#A34411] rounded-[34px] text-[11px] text-[#FFF7E0] font-normal px-3 py-2 cursor-pointer'
-              />
+              <button className='bg-[#A34411] rounded-[34px] text-[11px] text-[#FFF7E0] font-normal px-3 py-2 cursor-pointer flex justify-center  '>
+                Get Passes
+                <span>
+                  <img src={upArrow} alt='' className='pl-1' />
+                </span>
+              </button>
             </div>
             <div className='grow'>
               <img
@@ -63,13 +67,13 @@ export default function Navbar() {
         </div>
 
         {/* desktop version */}
-        <div className='container hidden md:block desktop_nav'>
+        <div className=' hidden md:block desktop_nav'>
           <div className=' flex flex-row justify-center items-center '>
             <div className='basis-1/4'></div>
 
             <div className='basis-1/2 py-4'>
               <ul className='flex justify-center items-center xl:space-x-4 lg:space-x-3 md:space-x-2'>
-                <li className='h-[70px] pt-4 hoverable  '>
+                <li className='h-[70px] pt-4 hoverable px-1 '>
                   <a
                     href='#'
                     className='xl:text-[22px] lg:text-[18px] md:text-[16px] font-normal relative block '>
@@ -78,28 +82,62 @@ export default function Navbar() {
                   {/* mega menu */}
                   <div className='p-6 mega-menu mb-16 sm:mb-0 shadow-xl '>
                     <div className='container mx-auto  '>
-                      <div className=' text-black my-8 text-center'></div>
-                      <div className=' flex justify-around items-center'>
-                        <ul>
-                          <li>
-                            <a href='#'>Founder’s Vision</a>
-                          </li>
-                        </ul>
-                        <div>
-                          <img src={megaImg1} alt='' />
+                      <div className='grid grid-cols-6  gap-4 items-center'>
+                        <div className='col-span-1 '></div>
+
+                        <div className='col-span-1 '>
+                          <ul>
+                            <li className='md:mb-3 lg:mb-0 '>
+                              <a
+                                href='#'
+                                className='2xl:text-[24px] xl:text-[20px] lg:text-[18px] md:text-[14px] font-normal  lg:leading-10 '>
+                                Founder’s Vision
+                              </a>
+                            </li>
+                            <li className='md:mb-3 lg:mb-0'>
+                              <a
+                                href='#'
+                                className='2xl:text-[24px] xl:text-[20px] lg:text-[18px] md:text-[14px] font-normal lg:leading-10  '>
+                                Mission
+                              </a>
+                            </li>
+                            <li className='md:mb-3 lg:mb-0'>
+                              <a
+                                href='#'
+                                className='2xl:text-[24px] xl:text-[20px] lg:text-[18px] md:text-[14px] font-normal lg:leading-10  '>
+                                Festival Totems
+                              </a>
+                            </li>
+                            <li className='md:mb-3 lg:mb-0'>
+                              <a
+                                href='#'
+                                className='2xl:text-[24px] xl:text-[20px] lg:text-[18px] md:text-[14px] font-normal lg:leading-10 '>
+                                Sustainability
+                              </a>
+                            </li>
+                          </ul>
                         </div>
+                        <div className='col-span-2 '>
+                          <img
+                            src={megaImg1}
+                            alt=''
+                            className='text-center lg:w-[190px] lg:h-[190px] md:w-[140px] md:h-[140px] mx-auto'
+                          />
+                        </div>
+                        <div className='col-span-1'></div>
+                        <div className='col-span-1'></div>
                       </div>
                     </div>
                   </div>
                 </li>
-                <li className='h-[70px] pt-4'>
+                <li className='h-[70px] pt-4 px-1 '>
                   <a
                     href='#'
                     className='xl:text-[22px] lg:text-[18px] md:text-[16px] font-normal'>
                     Program
                   </a>
                 </li>
-                <li className='h-[70px] pt-4'>
+                <li className='h-[70px] pt-4 px-1 '>
                   <a
                     href='#'
                     className='xl:text-[22px] lg:text-[18px] md:text-[16px] font-normal'>
@@ -109,14 +147,14 @@ export default function Navbar() {
                 <li className='lg:w-[290px] md:w-[200px]  lg:h-[67px] md:h-[47px]'>
                   <img src={imgLogo} alt='logo' className='w-full' />
                 </li>
-                <li className='h-[70px] pt-4'>
+                <li className='h-[70px] pt-4 px-1 '>
                   <a
                     href='#'
                     className='xl:text-[22px] lg:text-[18px] md:text-[16px] font-normal'>
                     Attend
                   </a>
                 </li>
-                <li className='h-[70px] pt-4'>
+                <li className='h-[70px] pt-4 px-1 '>
                   <a
                     href='#'
                     className='xl:text-[22px] lg:text-[18px] md:text-[16px] font-normal'>
@@ -127,9 +165,12 @@ export default function Navbar() {
             </div>
 
             <div className='basis-1/4  flex justify-center items-center mb-2'>
-              <button className='bg-[#A34411] rounded-[34px] text-[#FFF7E0] font-normal xl:text-[20px] lg:text-[18px] md:text-[14px] xl:w-[185px] lg:w-[140px] md:w-[110px] lg:h-[47px] md:h-[37px]  '>
+              <button className='bg-[#A34411] rounded-[34px] text-[#FFF7E0] font-normal xl:text-[20px] lg:text-[18px] md:text-[14px] xl:w-[185px] lg:w-[140px] md:w-[110px] lg:h-[47px] md:h-[37px] flex justify-center items-center '>
                 {" "}
                 Get Passes{" "}
+                <sup className=' w-[24px] pl-3'>
+                  <img src={upArrow} alt='' />
+                </sup>
               </button>
             </div>
           </div>
@@ -139,7 +180,15 @@ export default function Navbar() {
 
       {/* Sidebar */}
       <div className={`sidebar ${isOpen == true ? "active" : ""}`}>
-        <div className='pt-28 pl-10 overflow-y-scroll'>
+        <div className=' overflow-y-scroll'>
+          <div className='pt-[50px] pb-[60px]  '>
+            <img
+              src={sidbarVersion}
+              alt=''
+              className='w-[270px] h-[64px] mx-auto '
+            />
+          </div>
+
           <div className='collapse collapse-plus '>
             <input type='radio' name='my-accordion-3' />
             <div className='collapse-title text-[26px] font-normal '>
@@ -244,12 +293,14 @@ export default function Navbar() {
         </div>
 
         {/* get pass button */}
-        <div className='mt-5 mb-14 text-center '>
-          <input
-            type='submit'
-            value='Get Passes'
-            className='bg-[#A34411] rounded-[34px] text-[20px] font-normal text-[#FFF7E0] w-[315px] h-[68px] '
-          />
+        <div className='mt-5 mb-14  '>
+          <button className='bg-[#A34411] rounded-[34px] text-[20px] font-normal text-[#FFF7E0] w-[315px] h-[68px] flex justify-center items-center mx-auto'>
+            {" "}
+            Get Passes{" "}
+            <sup className=' w-[24px] pl-3'>
+              <img src={upArrow} alt='' />
+            </sup>
+          </button>
         </div>
       </div>
       {/* Overlay */}
@@ -258,45 +309,4 @@ export default function Navbar() {
         onClick={handleHamMenu}></div>
     </>
   );
-}
-
-{
-  /* import React, { useState } from "react";
- import "./Navbar.css";
-
- export default function Navbar() {
-  const [isHovered, setIsHovered] = useState(false);
-
-  const handleHover = () => {
-    setIsHovered(true);
-  };
-
-  const handleUnhover = () => {
-    setIsHovered(false);
-  };
-
-  const navbarClass = isHovered ? "navbar hovered" : "navbar";
-
-  return (
-    <nav
-      className={navbarClass}
-      onMouseEnter={handleHover}
-      onMouseLeave={handleUnhover}>
-      <ul className='menu'>
-        <li>
-          <a href='#'>Home</a>
-        </li>
-        <li>
-          <a href='#'>About</a>
-        </li>
-        <li>
-          <a href='#'>Services</a>
-        </li>
-        <li>
-          <a href='#'>Contact</a>
-        </li>
-      </ul>
-    </nav>
-  );
-} */
 }
