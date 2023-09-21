@@ -3,7 +3,7 @@ import heroImg from "./../../assets/heroImg.png";
 const Banner = () => {
   return (
     <>
-      <div className="min-h-screen bg-[#C06F39] flex items-center py-6 lg:py-6">
+      <div className="min-h-screen bg-[#C06F39] flex items-center py-6 lg:py-6 container">
         <div className="w-full px-[15px] grid lg:grid-cols-2  lg:items-center md:grid-cols-1">
           {/* Banner left Area */}
           <div className="xsm:w-full xsm:text-center  lg:order-2">
