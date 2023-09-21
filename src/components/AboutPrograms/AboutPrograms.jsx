@@ -20,8 +20,8 @@ export default function AboutPrograms() {
   };
   return (
     <>
-      <div className='container pt-[80px] bg-[#C06F39] '>
-        <div className='tabs flex justify-center items-center'>
+      <div className="container pt-[80px] bg-[#C06F39] ">
+        <div className="tabs flex justify-center items-center">
           {tabs.map((tab, index) => (
             <div
               key={index}
@@ -30,49 +30,41 @@ export default function AboutPrograms() {
                   ? "active text-[#ffe88c] px-10 text-[32px] h-[93px] "
                   : "px-10 text-[#e0aa51] text-[32px] h-[93px] "
               }`}
-              onClick={() => handleTabClick(index)}>
+              onClick={() => handleTabClick(index)}
+            >
               {tab}
             </div>
           ))}
         </div>
 
-        <div className='tab-content'>
+        <div className="tab-content">
           {tabs[activeTab] === "Festival Mission" && (
             <>
-              <div className='flex justify-around pt-[100px] '>
-                <div className='pt-[100px] w-[425px] h-[672px]'>
+              <div className="flex justify-around pt-[100px] ">
+                <div className="pt-[100px] w-[425px] h-[672px]">
                   <img
                     src={festiveImg}
-                    alt=''
-                    className='max-w-[425px] w-full '
+                    alt=""
+                    className="max-w-[425px] w-full "
                   />
                 </div>
 
                 <div>
-                  <div className='w-[862px] '>
-                    <h1 className='text-[#FFF7E0] text-[65px] font-medium leading-[70px] '>
-                      It is through music that we <br /> can become enlightened{" "}
-                      <br /> and connected to the <br /> divine.
+                  <div className="w-[882px]">
+                    <h1 className="text-[#FFF7E0] text-[64px] font-medium leading-[90px] flex justify-end">
+                      It is through music that we <br /> can become enlightened
+                       and<br /> connected to the divine.
                     </h1>
                   </div>
 
-                  <div className='pl-16 text-[#FFF7E0] pt-[70px] '>
-                    <p>
-                      This is why we are bringing together artists from <br />{" "}
-                      around the world who understand our message, <br /> and
-                      the need to revive and bring back our ancient <br />{" "}
-                      wisdom through sacred songs and traditional <br /> music –
-                      music that will help us remember our past <br /> and
-                      revive our traditions. This is Tanweer.
+                  <div className="text-[#FFF7E0] pt-[70px] w-full flex flex-col items-center">
+                    <p className="max-w-[631px] w-full text-[26px] pb-[26px]">
+                      This is why we are bringing together artists from around the world who understand our message, and the need to revive and bring back our ancient wisdom through sacred songs and traditionalmusic – music that will help us remember our past and revive our traditions. This is Tanweer.
                     </p>
 
-                    <p>
-                      Tanweer means enlightenment – a meeting of <br /> minds
-                      and hearts. Tanweer will bring together the <br /> keepers
-                      of wisdom to raise our collective <br /> frequency and
-                      connect us with our past. Thank you <br /> for joining us.
-                      With love and gratitude, <br /> Bodour Al Qasimi <br />
-                      Alchemist & Guardian
+                    <p className="max-w-[631px] w-full text-[26px]">
+                      Tanweer means enlightenment – a meeting of minds and
+                      hearts. Tanweer will bring together the keepers of wisdom to raise our collective frequency and connect us with our past. Thank you for joining us. With love and gratitude,<span className="block pt-[22px]">Bodour Al Qasimi</span>  
                     </p>
                   </div>
                 </div>
