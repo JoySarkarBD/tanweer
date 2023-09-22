@@ -1,5 +1,6 @@
 import { useState } from "react";
 import apeChimba from "../../assets/ape_chimba.png";
+import modalArrow from "../../assets/modal_arrow.png";
 import "./program.css";
 
 export default function Program2() {
@@ -50,21 +51,60 @@ export default function Program2() {
           {/* ape chimba modal */}
           {isHovering && isHovering2 && (
             <>
-              <div className='absolute modal_section bottom-[-15%] '>
+              {/* Desktop Version */}
+              <div className='absolute bottom-[-15%] hidden md:block'>
                 <div className='relative'>
                   {/* image modal */}
-                  <div className='2xl:w-[642px] xl:w-[542px] lg:w-[492px] md:w-[442px] 2xl:h-[619px] xl:h-[519px]  lg:h-[469px] md:h-[419px] img_modal relative'>
+                  <div className='2xl:w-[642px] xl:w-[542px] lg:w-[492px] md:w-[442px] 2xl:h-[619px] xl:h-[519px]  lg:h-[469px] md:h-[419px]  relative'>
                     <img src={apeChimba} alt='' className='w-full' />
                   </div>
 
                   {/* info modal */}
-                  <div className='absolute  lg:bottom-[-1%] md:bottom-[-2%] xl:left-[-55%] lg:left-[-55%] md:left-[-42%] bg-[#ffe88c] xl:w-[450px] lg:w-[420px] md:w-[320px]  xl:h-[225px] lg:h-[195px] md:h-[175px] pl-12 '>
-                    <h4 className='text-[#C06F39]  xl:text-[32px] lg:text-[28px] md:text-[24px] font-normal pt-10 md:pt-7  text-left'>
-                      Ape Chimb
-                    </h4>
-                    <p className='text-[#C06F39] xl:text-[24px] lg:text-[20px] md:text-[18px] font-normal pt-8 md:pt-5  text-left'>
-                      Multi-instrumental art and <br /> November 24 - 6PM{" "}
-                    </p>
+                  <div className='absolute  lg:bottom-[-1%] md:bottom-[-2%] 2xl:left-[-50%] xl:left-[-55%] lg:left-[-55%] md:left-[-42%] bg-[#ffe88c] 2xl:w-[500px] xl:w-[450px] lg:w-[420px] md:w-[320px] 2xl:h-[275px] xl:h-[225px] lg:h-[195px] md:h-[175px] pl-12 flex justify-between '>
+                    <div>
+                      <h4 className='text-[#C06F39] 2xl:text-[38px]  xl:text-[32px] lg:text-[28px] md:text-[24px] font-normal 2xl:pt-12 pt-10 md:pt-7  text-left'>
+                        Ape Chimb
+                      </h4>
+                      <p className='text-[#C06F39] 2xl:text-[28px] xl:text-[24px] lg:text-[20px] md:text-[18px] font-normal 2xl:pt-12 xl:pt-10 pt-10 md:pt-5  text-left'>
+                        Multi-instrumental art and <br /> November 24 - 6PM{" "}
+                      </p>
+                    </div>
+
+                    <div className='mt-4 me-3'>
+                      <img src={modalArrow} alt='' />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Mobile version */}
+              <div className='absolute block  md:hidden '>
+                <div className='text-gray-600 body-font'>
+                  <div className='container px-5 py-24 mx-auto'>
+                    <div className='bg-[#FFE88C]   mx-auto '>
+                      <div className=' '>
+                        <img
+                          className='xmd:w-[447px] sm:w-[367px] xsm:w-[337px] xmd:h-[400px]  sm:h-[354px] xsm:h-[300px]  mb-6'
+                          src={apeChimba}
+                          alt='content'
+                        />
+                        <div className='flex justify-between'>
+                          <div className='pl-4'>
+                            <h3 className='text-left xmd:text-[24px] sm:text-[22px] xsm:text-[20px] text-[#C06F39] font-normal leading-[55px] '>
+                              Ape Chimba
+                            </h3>
+                            <p className='text-left text-[#C06F39] xmd:text-[16px] sm:text-[14px] xsm:text-[14px] font-normal leading-[25px] pb-8'>
+                              Multi-instrumental artist and vocalist <br />{" "}
+                              November 24 – 6PM
+                            </p>
+                          </div>
+
+                          <div className='me-3'>
+                            <img src={modalArrow} alt='' />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
