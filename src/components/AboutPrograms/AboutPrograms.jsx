@@ -21,7 +21,7 @@ export default function AboutPrograms() {
   return (
     <>
       <div className="container pt-[80px] bg-[#C06F39] ">
-        <div className="tabs flex justify-center items-center">
+        <div className="tabs flex justify-center items-center ">
           {tabs.map((tab, index) => (
             <div
               key={index}
