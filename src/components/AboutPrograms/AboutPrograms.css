@@ -6,9 +6,6 @@
 
 .tab {
   cursor: pointer;
-  /* font-size: 28px !important; */
-  /* color: #e0aa51 !important; */
-  /* height: 93px !important; */
 }
 
 .tab.active {
