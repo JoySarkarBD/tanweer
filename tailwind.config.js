@@ -12,6 +12,9 @@ export default {
         xl: { min: "1280px" },
         "2xl": { min: "1536px" },
       },
+      backgroundImage: {
+        exploreBg: "url('/src/assets/explore-bg.png')",
+      },
     },
   },
 
