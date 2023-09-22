@@ -22,14 +22,14 @@ export default function AboutPrograms() {
     <>
       <div className="container pt-[80px] bg-[#C06F39] ">
         <div className="tabs-border">
-          <div className="mx-auto overflow-x-auto"> 
+          <div className="mx-auto overflow-x-auto">
             <div className="w-full tabs flex flex-nowrap justify-center items-center xsm:w-[650px] sm:w-[655px] xmd:w-[660px] xmd:m-auto md:w-full lg:w-full ">
               {tabs.map((tab, index) => (
                 <div
                   key={index}
                   className={` tab ${
                     index === activeTab
-                      ? "active flex  flex-nowrap text-[#ffe88c] xl:px-10 lg:px-7 md:px-3 xmd:px-5 sm:px-5 xsm:px-5 xl:text-[32px] lg:text-[28px] md:text-[23px] xmd:text-[20px] sm:text-[18px] xsm:text-[18px] h-[93px]  after:content-[''] after:w-full after:h-[2px] after:bg-white after:left-0 after:bottom-0 after:block"
+                      ? "active flex  flex-nowrap text-[#ffe88c] xl:px-10 lg:px-7 md:px-3 xmd:px-5 sm:px-5 xsm:px-5 xl:text-[32px] lg:text-[28px] md:text-[23px] xmd:text-[20px] sm:text-[18px] xsm:text-[18px] h-[93px] xsm:after:absolute  xsm:after:content-[''] xsm:after:w-full xsm:after:h-[2px] xsm:after:bg-white md:after:opacity-0 lg:after:h-0 after:left-0 after:bottom-0 after:block"
                       : " xl:px-10 lg:px-7 md:px-3 xmd:px-5 sm:px-5 xsm:px-5 text-[#e0aa51] xl:text-[32px] lg:text-[28px] md:text-[23px] xmd:text-[20px] sm:text-[18px] xsm:text-[18px] h-[93px] flex flex-nowrap "
                   }`}
                   onClick={() => handleTabClick(index)}
