@@ -40,21 +40,6 @@ export default function AboutPrograms() {
             </div>
           </div>
         </div>
-        {/* <div className='tabs flex flex-nowrap justify-center items-center overflow-x-scroll md:overflow-hidden  '>
-          {tabs.map((tab, index) => (
-            <div
-              key={index}
-              className={` tab ${
-                index === activeTab
-                  ? "active flex  flex-nowrap text-[#ffe88c] xl:px-10 lg:px-7 md:px-3 xmd:px-5 sm:px-5 xsm:px-5 xl:text-[32px] lg:text-[28px] md:text-[23px] xmd:text-[20px] sm:text-[18px] xsm:text-[18px] h-[93px]  "
-                  : " xl:px-10 lg:px-7 md:px-3 xmd:px-5 sm:px-5 xsm:px-5 text-[#e0aa51] xl:text-[32px] lg:text-[28px] md:text-[23px] xmd:text-[20px] sm:text-[18px] xsm:text-[18px] h-[93px] flex flex-nowrap "
-              }`}
-              onClick={() => handleTabClick(index)}>
-              {tab}
-            </div>
-          ))}
-        </div> */}
-
         <div className="tab-content">
           {tabs[activeTab] === "Festival Mission" && (
             <>
