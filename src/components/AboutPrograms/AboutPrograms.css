@@ -1,5 +1,9 @@
 /* Style for the tabs */
-.tabs {
+/* .tabs {
+  border-top: 1px solid #e0aa51 !important;
+  border-bottom: 1px solid #e0aa51 !important;
+} */
+.tabs-border {
   border-top: 1px solid #e0aa51 !important;
   border-bottom: 1px solid #e0aa51 !important;
 }
