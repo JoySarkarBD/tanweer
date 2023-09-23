@@ -64,8 +64,13 @@
 /* #hoverable Class Styles */
 .hoverable {
   position: static;
+  cursor: pointer;
+  margin-right: 10px;
+  
 }
-
+.hoverable a{
+  padding: 0 10px;
+}
 .hoverable a:after {
   font-size: 10px;
   padding-left: 6px;
@@ -120,4 +125,19 @@
 	top: -78px;
   margin-left: -35px;
   top: -26px;
+}
+
+
+.collapse.collapse-plus:hover::before {
+	content: "";
+	width: 80px;
+	height: 82px;
+	background: #CD6B2A;
+	/* top: 0; */
+	position: absolute;
+	left: -70px;
+	border-radius: 50%;
+	transition: .3s;
+	z-index: 9999;
+	top: -6px;
 }
