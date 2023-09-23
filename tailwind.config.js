@@ -13,8 +13,8 @@ export default {
         "2xl": { min: "1536px" },
       },
       backgroundImage: {
-        'hoverNav': "url('./src/assets/navtop.png')",
-      }
+        exploreBg: "url('/src/assets/explore-bg.png')",
+      },
     },
   },
 
