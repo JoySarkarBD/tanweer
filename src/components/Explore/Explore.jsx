@@ -1,7 +1,8 @@
 import "swiper/css";
 import "swiper/css/effect-coverflow";
+import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { EffectCoverflow } from "swiper/modules";
+import { EffectCoverflow, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "./Explore.css";
 
@@ -58,6 +59,7 @@ export default function Explore() {
             grabCursor={true}
             centeredSlides={true}
             slidesPerView={"auto"}
+            loop={true}
             coverflowEffect={{
               rotate: 50,
               stretch: 0,
@@ -65,7 +67,8 @@ export default function Explore() {
               modifier: 1,
               slideShadows: true,
             }}
-            modules={[EffectCoverflow]}
+            navigation={true}
+            modules={[EffectCoverflow, Navigation]}
             breakpoints={{
               481: {
                 slidesPerView: 1,

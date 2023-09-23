@@ -60,6 +60,16 @@
   height: 300px !important;
 }
 
+.swiper-button-prev::after {
+  content: "\2190" !important;
+  color: #fff7e0 !important;
+}
+
+.swiper-button-next:after {
+  content: "\2192" !important;
+  color: #fff7e0 !important;
+}
+
 /* lg media query */
 @media only screen and (max-width: 1279px) and (min-width: 1201px) {
   .swiper-slide img {
