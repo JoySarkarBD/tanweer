@@ -46,7 +46,7 @@ export default function Explore() {
     <>
       <div className='bg-exploreBg bg-no-repeat bg-cover bg-center py-20'>
         <div>
-          <h1 className='text-[#FFF7E0] text-center  text-[60px] font-normal  '>
+          <h1 className='text-[#FFF7E0] text-center  md:text-[60px] xmd:text-[40px] font-normal  '>
             Explore Tanweer
           </h1>
         </div>
@@ -66,10 +66,13 @@ export default function Explore() {
               slideShadows: true,
             }}
             modules={[EffectCoverflow]}
-            // pagination={true}
             breakpoints={{
-              640: {
+              481: {
                 slidesPerView: 1,
+                spaceBetween: 2,
+              },
+              641: {
+                slidesPerView: 3,
                 spaceBetween: 2,
               },
               768: {
@@ -77,6 +80,14 @@ export default function Explore() {
                 spaceBetween: 10,
               },
               1024: {
+                slidesPerView: 3,
+                spaceBetween: 10,
+              },
+              1280: {
+                slidesPerView: 3,
+                spaceBetween: 10,
+              },
+              1536: {
                 slidesPerView: 3,
                 spaceBetween: 10,
               },
@@ -93,7 +104,7 @@ export default function Explore() {
           </Swiper>
         </div>
 
-        <p className='text-center text-[#FFF7E0] text-[18px] font-normal w-[500px] mx-auto mt-[-40px]'>
+        <p className='text-center text-[#FFF7E0] text-[18px] font-normal xl:w-[500px] lg:w-[450px] md:w-[400px] mx-auto mt-[-40px]'>
           Tanweer Sacred Music Festival will feature workshops and <br />{" "}
           sessions on music, vibration, and singing led by experienced <br />{" "}
           medicine musicians, teachers, and facilitators.
