@@ -72,7 +72,7 @@ export default function Explore() {
                 spaceBetween: 2,
               },
               641: {
-                slidesPerView: 1,
+                slidesPerView: 3,
                 spaceBetween: 2,
               },
               768: {
