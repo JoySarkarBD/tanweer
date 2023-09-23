@@ -15,11 +15,24 @@ import "./Navbar.css";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
-
+  const [navHover, setNavHover] = useState(false);
+  const [smNavHover, setSmNavHover] = useState(false);
   const handleHamMenu = () => {
     isOpen === true ? setIsOpen(false) : setIsOpen(true);
   };
 
+  const showSmNavborder = () => {
+    setSmNavHover(true);
+  };
+  const hideSmNavborder = () => {
+    setSmNavHover(false);
+  };
+  const showNavborder = () => {
+    setNavHover(true);
+  };
+  const hideNavborder = () => {
+    setNavHover(false);
+  };
   const handleHover = () => {
     setIsHovered(true);
   };
@@ -32,7 +45,13 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="relative">
+      <nav
+        className={`relative ${
+          navHover
+            ? "border-t-[18px] border-[#CD6B2A] hover:transition-all"
+            : ""
+        }`}
+      >
         {/* Mobile version */}
         <div className="container h-[51px] bg-[#FFF7E0] block  md:hidden  ">
           <div className="flex py-3.5 ">
@@ -68,7 +87,11 @@ export default function Navbar() {
 
             <div className="basis-1/2 py-4">
               <ul className="flex justify-center items-center xl:space-x-4 lg:space-x-3 md:space-x-2">
-                <li className="h-[70px] pt-4 hoverable px-1 ">
+                <li
+                  className="h-[70px] pt-4 hoverable px-1 "
+                  onMouseEnter={showNavborder}
+                  onMouseLeave={hideNavborder}
+                >
                   <a
                     href="#"
                     className="xl:text-[22px] lg:text-[18px] md:text-[16px] font-normal relative block "
@@ -130,7 +153,11 @@ export default function Navbar() {
                     </div>
                   </div>
                 </li>
-                <li className="h-[70px] pt-4 px-1 hoverable ">
+                <li
+                  className="h-[70px] pt-4 px-1 hoverable "
+                  onMouseEnter={showNavborder}
+                  onMouseLeave={hideNavborder}
+                >
                   <a
                     href="#"
                     className="xl:text-[22px] lg:text-[18px] md:text-[16px] font-normal relative block "
@@ -193,7 +220,11 @@ export default function Navbar() {
                     </div>
                   </div>
                 </li>
-                <li className="h-[70px] pt-4 px-1  hoverable ">
+                <li
+                  className="h-[70px] pt-4 px-1  hoverable "
+                  onMouseEnter={showNavborder}
+                  onMouseLeave={hideNavborder}
+                >
                   <a
                     href="#"
                     className="xl:text-[22px] lg:text-[18px] md:text-[16px] font-normal relative block"
@@ -278,7 +309,11 @@ export default function Navbar() {
                 <li className="lg:w-[290px] md:w-[200px]  lg:h-[67px] md:h-[47px]">
                   <img src={imgLogo} alt="logo" className="w-full" />
                 </li>
-                <li className="h-[70px] pt-4 px-1  hoverable ">
+                <li
+                  className="h-[70px] pt-4 px-1  hoverable "
+                  onMouseEnter={showNavborder}
+                  onMouseLeave={hideNavborder}
+                >
                   <a
                     href="#"
                     className="xl:text-[22px] lg:text-[18px] md:text-[16px] font-normal relative block"
@@ -355,7 +390,11 @@ export default function Navbar() {
                     </div>
                   </div>
                 </li>
-                <li className="h-[70px] pt-4 px-1  hoverable ">
+                <li
+                  className="h-[70px] pt-4 px-1  hoverable"
+                  onMouseEnter={showNavborder}
+                  onMouseLeave={hideNavborder}
+                >
                   <a
                     href="#"
                     className="xl:text-[22px] lg:text-[18px] md:text-[16px] font-normal relative block"
@@ -429,7 +468,11 @@ export default function Navbar() {
       <AnnounceBar />
 
       {/* Sidebar */}
-      <div className={`sidebar ${isOpen == true ? "active" : ""}`}>
+      <div
+        className={`sidebar ${isOpen == true ? "active" : ""} ${
+          smNavHover && "border-l-[17px] border-[#CD6B2A]"
+        }`}
+      >
         <div className=" overflow-y-scroll">
           <div className="pt-[50px] pb-[60px]  flex align-middle">
             <img
@@ -437,7 +480,10 @@ export default function Navbar() {
               alt=""
               className="w-[270px] h-[64px] mx-auto "
             />
-            <span onClick={handleHamMenu} className="pe-4 cursor-pointer inline-block">
+            <span
+              onClick={handleHamMenu}
+              className="pe-4 cursor-pointer inline-block"
+            >
               <svg
                 fill="#A34410"
                 height="30px"
@@ -465,7 +511,11 @@ export default function Navbar() {
             </span>
           </div>
 
-          <div className="collapse collapse-plus ">
+          <div
+            onMouseEnter={showSmNavborder}
+            onMouseLeave={hideSmNavborder}
+            className="collapse collapse-plus overflow-visible"
+          >
             <input type="radio" name="my-accordion-3" />
             <div className="collapse-title text-[26px] font-normal ">
               Belief
@@ -485,7 +535,11 @@ export default function Navbar() {
               </li>
             </ul>
           </div>
-          <div className="collapse collapse-plus ">
+          <div
+            onMouseEnter={showSmNavborder}
+            onMouseLeave={hideSmNavborder}
+            className="collapse collapse-plus overflow-visible"
+          >
             <input type="radio" name="my-accordion-3" />
             <div className="collapse-title text-[26px] font-normal">
               Program
@@ -505,7 +559,11 @@ export default function Navbar() {
               </li>
             </ul>
           </div>
-          <div className="collapse collapse-plus ">
+          <div
+            onMouseEnter={showSmNavborder}
+            onMouseLeave={hideSmNavborder}
+            className="collapse collapse-plus overflow-visible"
+          >
             <input type="radio" name="my-accordion-3" />
             <div className="collapse-title text-[26px] font-normal">
               Explore
@@ -531,7 +589,11 @@ export default function Navbar() {
               </li>
             </ul>
           </div>
-          <div className="collapse collapse-plus ">
+          <div
+            onMouseEnter={showSmNavborder}
+            onMouseLeave={hideSmNavborder}
+            className="collapse collapse-plus overflow-visible"
+          >
             <input type="radio" name="my-accordion-3" />
             <div className="collapse-title text-[26px] font-normal">Attend</div>
             <ul className="collapse-content text-[22px] font-light ">
@@ -552,7 +614,11 @@ export default function Navbar() {
               </li>
             </ul>
           </div>
-          <div className="collapse collapse-plus ">
+          <div
+            onMouseEnter={showSmNavborder}
+            onMouseLeave={hideSmNavborder}
+            className="collapse collapse-plus overflow-visible"
+          >
             <input type="radio" name="my-accordion-3" />
             <div className="collapse-title text-[26px] font-normal">
               Support

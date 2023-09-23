@@ -16,3 +16,16 @@ body {
 .footer_container {
   @apply !mx-auto lg:px-24 md:px-10 sm:px-2 px-4 !h-full;
 }
+.collapse.collapse-plus:hover::before {
+	content: "";
+	width: 76px;
+	height: 80px;
+	background: #CD6B2A;
+	/* top: 0; */
+	position: absolute; 
+	left: -66px;
+	border-radius: 50%;
+	transition: .3s;
+	z-index: 9999;
+	top: -4px;
+}
