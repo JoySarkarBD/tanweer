@@ -46,7 +46,7 @@ export default function Explore() {
     <>
       <div className='bg-exploreBg bg-no-repeat bg-cover bg-center py-20'>
         <div>
-          <h1 className='text-[#FFF7E0] text-center  md:text-[60px] xmd:text-[40px] font-normal  '>
+          <h1 className='text-[#FFF7E0] text-center  md:text-[60px] xsm:text-[40px] font-normal  '>
             Explore Tanweer
           </h1>
         </div>
@@ -68,6 +68,10 @@ export default function Explore() {
             modules={[EffectCoverflow]}
             breakpoints={{
               481: {
+                slidesPerView: 1,
+                spaceBetween: 2,
+              },
+              640: {
                 slidesPerView: 1,
                 spaceBetween: 2,
               },
@@ -104,11 +108,13 @@ export default function Explore() {
           </Swiper>
         </div>
 
-        <p className='text-center text-[#FFF7E0] text-[18px] font-normal xl:w-[500px] lg:w-[450px] md:w-[400px] mx-auto mt-[-40px]'>
-          Tanweer Sacred Music Festival will feature workshops and <br />{" "}
-          sessions on music, vibration, and singing led by experienced <br />{" "}
-          medicine musicians, teachers, and facilitators.
-        </p>
+        <div className='lg:w-[600px] md:w-[500px] xmd:w-[450px]  mx-auto mt-[-40px]'>
+          <p className='text-center text-[#FFF7E0] md:text-[18px] xmd:text-[16px] font-normal '>
+            Tanweer Sacred Music Festival will feature workshops and <br />{" "}
+            sessions on music, vibration, and singing led by experienced <br />{" "}
+            medicine musicians, teachers, and facilitators.
+          </p>
+        </div>
 
         <div className='text-center pt-[81px] pb-[13px]  '>
           <button className='text-[#FFF7E0] text-[22px] font-normal bg-[#A34411] rounded-[35px] px-8 py-4'>
