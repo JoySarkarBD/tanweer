@@ -24,7 +24,7 @@ export default function Features() {
       </div>
 
       <div className='text-center md:mt-[250px] text-white py-5 space-y-16'>
-        <h2 className='text-[30px] leading-normal font-normal md:text-[55px] font-aktive'>
+        <h2 className='text-[30px] leading-normal font-normal md:text-[55px] font-aktive sm:px-2 '>
           We have been waiting for you
         </h2>
         <button className='max-w-[159px] text-[14px] font-normal cursor-pointer w-full h-[43px] bg-[#F99D73] rounded-[30px] md:max-w-[250px] md:text-[22px] md:h-[78px] md:rounded-[50px] font-aktive'>
