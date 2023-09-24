@@ -66,11 +66,15 @@
   position: static;
   cursor: pointer;
   margin-right: 10px;
-  
 }
-.hoverable a{
+.hoverable a {
   padding: 0 10px;
 }
+
+.hoverable a:hover {
+  font-weight: 700 !important;
+}
+
 .hoverable a:after {
   font-size: 10px;
   padding-left: 6px;
@@ -86,58 +90,30 @@
   top: 90%;
 }
 
-/* Navbar Styles */
-/* .navbar {
-  background-color: #3498db;
-  padding: 10px 0;
-  transition: background-color 0.3s ease;
-}
-
-.navbar.hovered {
-  background-color: #e74c3c;
-}
-
-.menu {
-  list-style-type: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-}
-
-.menu li {
-  margin: 0 20px;
-}
-
-.menu a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-} */
 .hoverable:hover:before {
-	content: "";
-	width: 121px;
+  content: "";
+  width: 121px;
   height: 38px;
-  background: #CD6B2A;
+  background: #cd6b2a;
   border-radius: 50%;
   z-index: 1;
-	/* background: url(../../../assets/nav.svg); */
-	position: absolute;
-	top: -78px;
+  /* background: url(../../../assets/nav.svg); */
+  position: absolute;
+  top: -78px;
   margin-left: -35px;
   top: -26px;
 }
 
-
 .collapse.collapse-plus:hover::before {
-	content: "";
-	width: 80px;
-	height: 82px;
-	background: #CD6B2A;
-	/* top: 0; */
-	position: absolute;
-	left: -70px;
-	border-radius: 50%;
-	transition: .3s;
-	z-index: 9999;
-	top: -6px;
+  content: "";
+  width: 80px;
+  height: 82px;
+  background: #cd6b2a;
+  /* top: 0; */
+  position: absolute;
+  left: -70px;
+  border-radius: 50%;
+  transition: 0.3s;
+  z-index: 9999;
+  top: -6px;
 }
