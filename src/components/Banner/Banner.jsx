@@ -19,7 +19,7 @@ const Banner = () => {
                 <span className="text-[30px] leading-[100px] md:text-[65px] md:leading-[100px]">
                   GET YOUR
                 </span>
-                <span className="font-aktive text-[45px] leading-[55px] md:text-[75px]  md:leading-[100px]">
+                <span className="font-aktive text-[45px] leading-[55px] xl:text-[65px] lg:text-[65px] md:text-[55px]  md:leading-[100px]">
                   TICKETS NOW
                 </span>
               </h1>

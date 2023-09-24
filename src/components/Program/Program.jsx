@@ -7,7 +7,7 @@ export default function Program() {
     <div className='bg-[#C06F39] py-24'>
       <div className='container'>
         <div className='text-center'>
-          <h3 className='text-[#FFE88C] md:text-[60px] leading-normal'>
+          <h3 className='text-[#FFE88C] md:text-[60px] leading-normal font-aktive'>
             Program
           </h3>
           <span className='md:text[30px] text-[#FFF7E0]'>

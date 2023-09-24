@@ -49,7 +49,7 @@ export default function Explore() {
     <>
       <div className='bg-exploreBg bg-no-repeat bg-cover bg-center py-20'>
         <div>
-          <h1 className='text-[#FFF7E0] text-center  lg:text-[80px]  md:text-[60px] sm:text-[50px]  font-normal  '>
+          <h1 className='text-[#FFF7E0] text-center  lg:text-[80px]  md:text-[60px] sm:text-[50px]  font-normal font-aktive '>
             Explore Tanweer
           </h1>
         </div>
