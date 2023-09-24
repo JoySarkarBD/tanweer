@@ -65,7 +65,7 @@ export default function Program2() {
                       <h4 className='text-[#C06F39] 2xl:text-[38px]  xl:text-[32px] lg:text-[28px] md:text-[24px] font-normal 2xl:pt-12 pt-10 md:pt-7  text-left'>
                         Ape Chimb
                       </h4>
-                      <p className='text-[#C06F39] 2xl:text-[28px] xl:text-[24px] lg:text-[20px] md:text-[18px] font-normal 2xl:pt-12 xl:pt-10 pt-10 md:pt-5  text-left'>
+                      <p className='text-[#C06F39] 2xl:text-[22px] xl:text-[18px] lg:text-[16px] md:text-[12px] font-normal 2xl:pt-12 xl:pt-10 pt-10 md:pt-5  text-left'>
                         Multi-instrumental art and <br /> November 24 - 6PM{" "}
                       </p>
                     </div>
@@ -81,7 +81,7 @@ export default function Program2() {
               <div className='absolute block  md:hidden '>
                 <div className='text-gray-600 body-font'>
                   <div className='container px-5 py-24 mx-auto'>
-                    <div className='bg-[#FFE88C]   mx-auto '>
+                    <div className='bg-[#FFE88C] xmd:w-[447px] sm:w-[367px] xsm:w-[337px]   mx-auto '>
                       <div className=' '>
                         <img
                           className='xmd:w-[447px] sm:w-[367px] xsm:w-[337px] xmd:h-[400px]  sm:h-[354px] xsm:h-[300px]  mb-6'
@@ -93,7 +93,7 @@ export default function Program2() {
                             <h3 className='text-left xmd:text-[24px] sm:text-[22px] xsm:text-[20px] text-[#C06F39] font-normal leading-[55px] '>
                               Ape Chimba
                             </h3>
-                            <p className='text-left text-[#C06F39] xmd:text-[16px] sm:text-[14px] xsm:text-[14px] font-normal leading-[25px] pb-8'>
+                            <p className='text-left text-[#C06F39] xmd:text-[14px] sm:text-[10px] xsm:text-[10px] font-normal leading-[25px] pb-8'>
                               Multi-instrumental artist and vocalist <br />{" "}
                               November 24 – 6PM
                             </p>

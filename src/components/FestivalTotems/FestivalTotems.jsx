@@ -17,7 +17,7 @@ export default function FestivalTotems() {
               alt='ReverentIcon'
             />
             <div className='mt-6 text-[#E0AA51]'>
-              <h2 className='md:text-[45px] xmd:text-[35px] md:leading-[65px] font-aktive'>
+              <h2 className='md:text-[45px] xmd:text-[35px] xsm:text-[22px] md:leading-[65px] font-aktive'>
                 Reverent
               </h2>
               <span className='md:text-[24px] md:leading-[32px] '>
@@ -34,7 +34,7 @@ export default function FestivalTotems() {
               alt='NourishingIcon'
             />
             <div className='text-[#E0AA51] mt-6'>
-              <h2 className='md:text-[45px] xmd:text-[35px] md:leading-[65px] font-aktive'>
+              <h2 className='md:text-[45px] xmd:text-[35px] xsm:text-[22px] md:leading-[65px] font-aktive'>
                 Nourishing
               </h2>
               <span className='md:text-[24px] md:leading-[32px] '>
@@ -51,7 +51,7 @@ export default function FestivalTotems() {
               alt='TransformativeIcon'
             />
             <div className='mt-6 text-[#E0AA51]'>
-              <h2 className='md:text-[45px] xmd:text-[35px] md:leading-[65px] font-aktive'>
+              <h2 className='md:text-[45px] xmd:text-[35px] xsm:text-[22px]  md:leading-[65px] font-aktive'>
                 Transformative
               </h2>
               <span className='md:text-[24px] md:leading-[32px] '>
