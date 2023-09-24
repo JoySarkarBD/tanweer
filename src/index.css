@@ -1,6 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Aktiv Grotesk Ex";
+  src: url("./Fonts/AktivGroteskEx-Regular.otf");
+}
+@font-face {
+  font-family: "TAN-AESOP";
+  src: url("./Fonts/TANAESOP.woff");
+}
+
 @font-face {
   font-family: "Aktiv-Grotesk"; /*a name to be used later*/
   src: url("./Fonts/AktivGrotesk-Regular.otf"); /*URL to font*/

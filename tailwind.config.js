@@ -12,6 +12,10 @@ export default {
         xl: { min: "1280px" },
         "2xl": { min: "1536px" },
       },
+      fontFamily: {
+        aktive: ["Aktiv Grotesk Ex", "san-serif"],
+        tan: ["TAN-AESOP", "san-serif"],
+      },
       backgroundImage: {
         exploreBg: "url('/src/assets/explore-bg.png')",
       },

@@ -6,7 +6,7 @@ export default function Program1() {
           NOV 24
         </h3>
 
-        <div className="text-white md:text-[30px] text-[22px] text-center flex justify-center flex-wrap gap-6 max-w-[740px] mx-auto mt-16">
+        <div className="font-tan text-white md:text-[30px] text-[22px] text-center flex justify-center flex-wrap gap-6 max-w-[740px] mx-auto mt-16">
           <h4>Shaneihu</h4>
           <h4>&#x2022; Nawa</h4>
           <h4>&#x2022; Estas Tonne</h4>
